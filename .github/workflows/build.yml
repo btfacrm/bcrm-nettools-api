@@ -7,13 +7,6 @@ on:
   pull_request: 
 
 jobs: 
-  Build:
+  Mulesoft:
     uses: btfacrm/common-devops/.github/workflows/mule-build.yml@main
     secrets: inherit
-
-    # Needed by the Unit Test Action
-    permissions:
-      contents: write
-      issues: write
-      checks: write
-      pull-requests: write
